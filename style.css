@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+:root
+{
+
+/**Add custom variables here**/
+
+/* ### Primary */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+/* ### Neutral */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue:hsl(223, 47%, 23%);
+}
+
+*,*::after,*::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html , body
+{
+    height: 100%;
+    width: 100%;
+    font-family: 'Red Hat Display';
+}
+
+img,video,iframe
+{
+    max-inline-size:100%;
+    block-size:auto;
+}
+
+body 
+{
+    display: grid;
+    place-content: center;
+    background-color: var(--pale-blue);
+    padding: 0 1.5rem;
+}
+
+main 
+{
+    width: 100%;
+    max-width: 375px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 1rem;
+
+    box-shadow: 4px 6px 8px rgba(128, 128, 128, 0.325);
+}
+
+
+.description
+{
+    margin: 2rem 0;
+}
+
+h1
+{
+    font-weight: 800;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.description p 
+{
+    color: gray;
+    font-weight: 500;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.annual-plan 
+{
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    background-color: var(--very-pale-blue);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.price 
+{
+    color: gray;
+}
+
+.proceed
+{
+    width: 90%;
+    margin:0 auto;
+    background-color: var(--bright-blue);
+    padding: 1.2rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.cancel 
+{
+    text-decoration: none;
+    color: var(--dark-blue);
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+
+#bg 
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+#bg img 
+{
+    width: 100%;
+}
